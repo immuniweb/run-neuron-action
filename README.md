@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run ImmuniWeb Neuron scan
-        uses: Immuniweb/run-neuron-action@main
+        uses: ImmuniWeb/run-neuron-action@main
         with:
             apikey: ${{ secrets.APIKEY }}
             target: ${{ secrets.TARGET }}
