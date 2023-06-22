@@ -1,0 +1,22 @@
+name: "Run ImmuniWeb Neuron scan"
+description: "Run ImmuniWeb Neuron automated scan"
+author: "ImmuniWeb SA"
+
+branding:
+  icon: "mic"
+  color: "blue"
+    
+inputs:
+  apikey:
+    description: "API key"
+    required: true
+  target:
+    description: "Target URL"
+    required: true
+
+runs:
+  using: docker
+  image: dockerfile
+  env:
+    APIKEY: ${{ inputs.apikey }}
+    TARGET: ${{ inputs.target }}
