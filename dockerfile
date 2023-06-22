@@ -1,4 +1,4 @@
-FROM debian:9.5-slim
+FROM debian:stable-slim
 
 ADD entrypoint.sh /entrypoint.sh
 
